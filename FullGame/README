@@ -1,0 +1,55 @@
+Name: Al Hisham Anik & Sean Rutherford
+ID #: 1585385 &
+CMPUT 275, Winter 2019
+
+Assignment : CMPUT 275 Final Project  
+
+
+Included Files:
+	-snake.cpp
+	-snakeSeg.cpp
+	-snakeSeg.h
+	-Wires connection image
+	-demonstartion video(demo)
+	-(other files added later)
+	-	
+	-
+	-
+	-
+	-
+	-Makefile
+	-README
+
+Accesories:
+	-Arduino MEGA 2560
+	-TFT Display
+	-1 Joystick
+	-5 Breakout Wires (Male to Female)
+
+Wiring Instructions:
+	-Arduino GND <M---F> Joystick Pin GND
+	-Arduino 5V <M---F> Joystick Pin 5V
+	-Arduino Pin A8 <M---F> Joystick Pin VRy
+	-Arduino Pin A9 <M---F> Joystick Pin VRx
+	-Arduino Pin 53 <M---F> Joystick Pin SW
+	***Attach TFT Display (by lining up the matching pins) AFTER connecting wires***
+
+Running Instructions:
+	1. Open the terminal and enter "make" && "make upload" to compile and upload the program in your arduino.
+	Window 1:(User interface)
+		This is a GUI interface window. You can touch different section of the screen labelled with instruction.
+		a) If you touch "Start game" box then the game window will pop open
+		b) If you touch "Last Score" then the latest score achieved by the user is displayed at a different window
+		c) If you touch "Quit Game" then the screen displays the credentials and then turn off the program after few seconds.
+		d) To run the program again after pressing quit game you will need to compile and upload the program again to the arduino or you can 			   press the joystick at the centre to retun to main menu
+	Window 2:(The Game)
+		You can see that the snake is of a specific length made by red blocks and waiting for you to move the joystick, the food is the green 			rectangle which pops at different position after each time the snake eats it. If you move the joystick to different direction to change 		the direction of the snake movement. If you release the joystick orientation it will move in the direction of the last joystick pointed 		direction. The game can end in many different ways : a) you press the joystick in the centre to return to main menu. b) If you hit the 			snake's body by its head it will eat itself so the game will end c)If you hit the edge of the screen, which is depicted as a wall then 			the snake will also die and game will end d) Lastly, if you try to back the snake by pressing back its body will collapse as its head 			collides with its body. Once you eat a fruit(green rectangle) your snake will grow in size(one block at each time) and you will gain 			one point for that.
+		
+
+Makefile:
+	-make: Builds executable for the program "server"
+
+
+Algorithms used:
+	Need to write about the warrior and the eucldiean distance calculation
+
